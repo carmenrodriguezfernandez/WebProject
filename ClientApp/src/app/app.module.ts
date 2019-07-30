@@ -16,7 +16,10 @@ import { InMemoryDataService } from '../app/services/in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { IngresaComponent } from './ingresa/ingresa.component';
 import { JuegosComponent } from './juegos/juegos.component';
-import { ServidoresComponent } from './servidores/servidores.component';
+import { AbajoComponent } from './abajo/abajo.component';
+import { AnadirComponent } from './anadir/anadir.component';
+import { ListarComponent } from './listar/listar.component';
+import { ModificarComponent } from './modificar/modificar.component';
 //import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -30,7 +33,14 @@ import { ServidoresComponent } from './servidores/servidores.component';
     EditarComponent,
     IngresaComponent,
     JuegosComponent,
-    ServidoresComponent
+    
+    AbajoComponent,
+    
+    AnadirComponent,
+    
+    ListarComponent,
+    
+    ModificarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -41,7 +51,7 @@ import { ServidoresComponent } from './servidores/servidores.component';
       { path: 'cursos', component: CursosComponent },
       { path: 'ingresa', component: IngresaComponent },
       { path: 'juegos', component: JuegosComponent },
-      { path: 'servidores', component: ServidoresComponent },
+      
     ]),HttpClientModule,
  //HttpClientInMemoryWebApiModule.forRoot(
   //InMemoryDataService, { dataEncapsulation: false } ),

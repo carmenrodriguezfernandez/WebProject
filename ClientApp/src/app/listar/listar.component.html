@@ -1,0 +1,24 @@
+<div >
+  <h1 class="h2">Lista De Juegos </h1>
+  </div>
+  <div>
+  <table class='table table-blue table-striped'>
+  <thead>
+  <tr>
+  <tr>
+  <th>Codigo</th>
+  <th>Nombre</th>
+  <th>descripcion</th>
+  <th>precio</th>
+  <th>Modificar</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let games of gamess">
+  <td>{{games.id}}</td>
+  <td>{{games.nombre}}</td>
+  <td>{{games.descripcion}}</td>
+  <td>{{games.precio}}</td>
+  <td><a routerLink="/modificar/{{games.id}}">ver</a></td>
+  </tr>
+</table>
+</div>

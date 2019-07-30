@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import{ GamesService } from'../servicio/games.servicio';
 import{ Games } from'../modelo/games';
 
+
 @Component({
-  selector: 'app-juegos',
-  templateUrl: './juegos.component.html',
-  styleUrls: ['./juegos.component.css']
+  selector: 'app-listar',
+  templateUrl: './listar.component.html',
+  styleUrls: ['./listar.component.css']
 })
-export class JuegosComponent implements OnInit {
-  
+export class ListarComponent implements OnInit {
   gamess:Games[];
   constructor(private Gamesservicio:GamesService) { }
 

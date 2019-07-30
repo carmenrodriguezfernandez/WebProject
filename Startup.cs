@@ -24,8 +24,13 @@ namespace Documents
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<tecContext>(opt =>
-            opt.UseInMemoryDatabase("TaskBD"));
+            //services.AddDbContext<tecContext>(opt =>
+            //opt.UseInMemoryDatabase("TaskBD"));
+            //services.AddDbContext<gamesContext>(opt =>
+            //opt.UseInMemoryDatabase("TaskBD"));
+             services.AddDbContext<tecContext>(opt =>
+            opt.UseSqlServer(@"Server=LAPTOP-R3D73IDA\MSSQLSERVER01;Database=TecDB;Trusted_Connection=True;"));
+      
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
             services.AddSwaggerDocument();

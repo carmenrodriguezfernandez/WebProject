@@ -1,241 +1,63 @@
+<div >
+  <h1 class="h2">Lista De Cursos </h1>
+  </div>
+  <div>
+  <table class='table table-blue table-striped'>
+  <thead>
+  <tr>
+  </thead>
+  <tr *ngFor="let tec of tecs">
+<td>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-text" style="text-align:center">Codigo: {{tec.id}}</h5>
+                  <h5 class="card-title " style="text-align:center">{{tec.nombre}}</h5>
+                  <h5 class="card-text" style="text-align:center">{{tec.descripcion}}</h5>
+                  <h5 class="card-text" style="text-align:center">{{tec.precioventa}}</h5>
+                <a href="https://www.invoicesimple.com/es/factura-simplificada" class="card-link">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</td>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  
+  </footer>
+  
+</tr>
+</table>
+</div>
 
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
-<body class="w3-light-grey">
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>CURSOS</b></h1>
-  <p>Cursos en linea</p>
-</header>
 
-<!-- Grid -->
-<div class="w3-row">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Como crear una NO-IP para Mu Online</b></h3>
-    </div>
-
-    <div class="w3-container">
-      <p> En este tutorial podrás aprender como crear y configurar tu NO-IP, también podrás aprender que es una IP,  dos tipos de IP como funciona y de igual manera la NO-IP
-
-        Espero sea de tu agrado y hayas aprendido, si tienes algún problema no dudes en comentar este vídeo,  no olvides suscribirte al canal, dale me gusta al vídeo.
-        
-        Hasta la próxima clase...
-        
-        Puedes contactarnos en nuestras redes sociales:</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Comprar »</b></button></p>
-        </div>
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+          <h5 class="card-text" style="text-align:center">Codigo: {{tec.id}}</h5>
       </div>
-    </div>
-  </div>
-  <hr>
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Como abrir puertos firewall en Windows XP/8.1 para Mu Online</b></h3>
-       </div>
-
-    <div class="w3-container">
-      <p>En este tutorial te enseñamos como abrir los puertos en firewall de windows para poder correr tu Mu Online a la perfección.
-
-        Si tienes dudas no te limites a comentar, comparte este vídeo, dale me gusta y únete a nuestras Redes y a nuestros canal:</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Comprar »</b></button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>Programacion</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog</p>
-    </div>
-  </div><hr>
   
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4> Comentarios</h4>
+      <div class="w3-container">
+          <h5 class="card-title " style="text-align:center">{{tec.nombre}}</h5>
+          <h5 class="card-text" style="text-align:center">{{tec.descripcion}}</h5>
+                  <h5 class="card-text" style="text-align:center">{{tec.precioventa}}</h5>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Comprar »</b></button></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dipesh</span><br>
-        <span>He aprendido mucho y se lo recomiendo a todos mis amigos.</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Koral</span><br>
-        <span>No tengo tiempo ni dinero para asistir a la universidad. Mi meta es convertirme en desarrollador web autónomo</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large"> Moises</span><br>
-        <span>Los cursos son fantásticos y los instructores son divertidos y expertos en su materia</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large"> Justin</span><br>
-        <span>Los cursos son fantásticos y los instructores son divertidos y expertos en su materia</span>
-      </li>  
-    </ul>
-  </div>
-  <hr> 
- 
-
- <!-- Footer -->
- <footer class="page-footer font-small stylish-color-dark pt-4">
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-4 mx-auto">
-
-        <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACTANOS</h5>
-        <p>
-          castridrodriguez@unicesar.edu.co
-
-        </p>
-        <p> +57 304 331 45 31 </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Pagos</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">En Linea</a>
-          </li>
-          <li>
-            <a href="#!">Targeta</a>
-          </li>
-          <li>
-            <a href="#!">Wester Union</a>
-          </li>
-          <li>
-            <a href="#!">Bancolombia</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Soporte</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">¿Cómo asegurar mi servidor VPS?</a>
-          </li>
-          <li>
-            <a href="#!">Politicas de Privacidad</a>
-          </li>
-          <li>
-            <a href="#!">Condiciones</a>
-          </li>
-          <li>
-            <a href="#!">Politicas de cookies</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
-
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://es-la.facebook.com/pg/tecgames.co/posts/"> Tec-Facebook</a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCZI9lJ3IecaB9HCyuzaqVnQ"> Tec-Youtube</a>
-          </li>
-          <li>
-            <a href="https://www.hostingnice.com/hosting"> Hosting</a>
-          </li>
-          <li>
-            <a href="https://web.whatsapp.com/"> Whatsapp</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <hr>
-
-  <!-- Call to action -->
-  <ul class="list-unstyled list-inline text-center py-2">
-    <li class="list-inline-item">
-      <h5 class="mb-1">Registro Gratis</h5>
-    </li>
-    <li class="list-inline-item">
-      <a href="ingresa" class="btn btn-danger btn-rounded">¡Ingresa!</a>
-    </li>
-  </ul>
-  <!-- Call to action -->
-
-  <hr>
-
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019 :
-    <a href="https://mdbootstrap.com/education/bootstrap/"> TecGames.co </a>
-  </div>
-  <!-- Copyright -->
+    <hr>

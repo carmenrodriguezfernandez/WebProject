@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2"> AGREGAR UN JUEGO </h1>
+  </div>
+  <p>Agregar un nuevo juego</p>
+  <div class="form-group">
+  <label>Codigo:
+  <input [(ngModel)]="games.id" class="form-control" placeholder="digite el Codigo" type="number"/>
+  </label>
+  </div>
+  <div class="form-group">
+  <label> Nombre Del Juego:
+  <input [(ngModel)]="games.nombre" class="form-control" placeholder="digite el nombre" type="text"/>
+  </label>
+  </div>
+  <div class="form-group">
+  <label>Descripcion:
+  <input [(ngModel)]="games.descripcion" class="form-control" placeholder="digite Descripcion " type="text" />
+  </label>
+  </div>
+  <div class="form-group">
+    <label>Precio:
+    <input [(ngModel)]="games.precio" class="form-control" placeholder="digite precio " type="number" />
+    </label>
+    </div>
+  <div class="form-group">
+  <button (click)="add()" class="btn btn-primary">Agregar </button>
+  </div>
